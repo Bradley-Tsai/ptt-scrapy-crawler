@@ -6,11 +6,12 @@
 
 # useful for handling different item types with a single interface
 from itemadapter import ItemAdapter
+from pprint import pprint
 
 
-class GossipingPipeline:
+class NormalPrintingPipeline:
     def process_item(self, item, spider):
-        print("=== GossipingPipeline ===")
-        print(item)
-        print("==========")
+        print(f"\n=== Spider Name: {spider.name} ===")
+        pprint(item)
+        print("==========\n")
         return item

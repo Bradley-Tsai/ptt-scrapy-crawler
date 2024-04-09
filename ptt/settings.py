@@ -63,7 +63,7 @@ ROBOTSTXT_OBEY = True
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-    "ptt.pipelines.GossipingPipeline": 300,
+    "ptt.pipelines.NormalPrintingPipeline": 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
